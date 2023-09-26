@@ -1,0 +1,16 @@
+5-Deteccion del problema
+a)¿Que problemas se puede ver a simple vista?
+b)¿Que nombre se le da a esta falla que ocurre en el codigo que provoca que cada ejecucion presente resultados diferentes?
+
+a) A simple vista, el problema que se puede identificar en el código
+es que los hilos (threads) representando a los comensales compiten por acceder 
+y consumir las hamburguesas de manera no coordinada. Esto resulta en una ejecución 
+caótica en la que los hilos pueden imprimir mensajes y consumir hamburguesas de manera 
+impredecible y desordenada. Como resultado, cada ejecución del programa produce resultados
+diferentes y potencialmente incorrectos.
+
+b) La falla que ocurre en el código, que provoca que cada ejecución presente resultados
+diferentes debido a la competencia no coordinada entre hilos, se llama "condición de carrera"
+o "race condition." Esta condición de carrera se produce cuando múltiples hilos acceden y
+modifican recursos compartidos sin una sincronización adecuada, lo que puede llevar a 
+resultados impredecibles y no deterministas en cada ejecución del programa
